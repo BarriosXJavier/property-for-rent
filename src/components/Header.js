@@ -12,6 +12,12 @@ const Header = () => {
         <Link to='/'>
           <img src={Logo} alt='' />
         </Link>
+        <div className='flex space-x-9 text-xl'>
+          <Link to="/" className='hover:text-purple-700 transition-colors duration-200 focus:text-blue-500' >Home</Link>
+          <Link to="./pages/About" className='hover:text-purple-700 transition-colors duration-200 focus:text-blue-500' >About</Link>
+          <Link to="/pages/ContactUs" className='hover:text-purple-700 transition-colors duration-200 focus:text-blue-500' >Contact Us</Link>
+          <Link to="/pages/Blogs" className='hover:text-purple-700 transition-colors duration-200 focus:text-blue-500' >Blogs</Link>
+        </div>
         <div className='flex items-center gap-6'>
           <Link className='hover:text-violet-900 transition' to='/'>
             Log in
