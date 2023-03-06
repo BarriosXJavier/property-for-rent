@@ -91,13 +91,16 @@ const PropertyDetails = () => {
             />
             <div className='flex gap-x-2'>
               <button
-                className='bg-violet-700 hover:bg-violet-800 text-white rounded p-4 text-sm w-full transition'
+                className='bg-violet-700 hover:bg-violet-800 text-white rounded p-2 text-sm w-full transition'
                 type='submit'
               >
                 Send message
               </button>
-              <button className='border border-violet-700 text-violet-700 hover:border-purple-600 hover:text-purple-600 rounded p-4 text-sm w-full transition'>
+              <button className='bg-violet-700 border border-violet-700 text-white hover:border-purple-600 hover:text-purple-600 rounded p-4 text-sm w-full transition'>
                 Call
+              </button>
+              <button className='bg-violet-700 border text-slate-200 border-violet-700 hover:bg-purple-700  hover:text-white rounded p-2 text-sm w-full transition'>
+                Book
               </button>
             </div>
           </form>

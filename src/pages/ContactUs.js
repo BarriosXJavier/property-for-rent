@@ -10,8 +10,8 @@ function ContactUs() {
   return (
     <>
       <section className="h-full max-h-[640px] mb-8 xl:mb-24">
-        <div className="lg:ml-8 xl:ml-[135px] flex flex-col items-center lg:items-start text-center lg:text-left justify-center flex-1 px-4 lg:px-0">
-          <p className="max-w-[480px] mb-8 text-md">
+        <div className="xl:ml-[135px] flex flex-col justify-center flex-1 px-4 lg:px-0">
+          <p className="max-w-[480px] mb-8 text-md mx-auto">
             We're here to assist you with any questions or concerns you may
             have. If you need help with our platform, have suggestions for
             improvement, or want to learn more about our advertising
@@ -20,7 +20,7 @@ function ContactUs() {
             appreciate your support. We look forward to hearing from you!
           </p>
         </div>
-        <div className=" flex flex-row space-x-9">
+        <div className=" flex flex-row space-x-4 justify-around m-2">
           <Link to='/'>
             <TwitterIcon  /> twitter
           </Link>

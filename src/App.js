@@ -12,6 +12,8 @@ import ContactUs from './pages/ContactUs';
 import Blogs from './pages/Blogs';
 import SignUpForm from './pages/SignUpForm'
 import LogInForm from './pages/LogInForm';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Route path='/pages/Blogs' element={<Blogs />} />
         <Route path='/pages/SignUpForm' element={<SignUpForm />} />
         <Route path='/pages/LogInForm' element={<LogInForm />} />
+        <Route path='/pages/PrivacyPolicy' element={<PrivacyPolicy />} />
+        <Route path='/pages/TermsOfService' element={<TermsOfService />} />
       </Routes>
       <Footer />
     </div>
