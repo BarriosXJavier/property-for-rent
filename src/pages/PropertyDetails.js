@@ -8,6 +8,9 @@ import { useParams } from 'react-router-dom';
 import { BiBed, BiBath, BiArea, BiPhone } from 'react-icons/bi';
 // import link
 import { Link } from 'react-router-dom';
+// import PhotoCarousel for testing
+import PhotoCarousel from '../components/PhotoCarousel';
+
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -27,7 +30,7 @@ const PropertyDetails = () => {
             {property.type}
           </div>
           <div className='bg-violet-500 rounded-full text-white px-3 inline-block'>
-            {property.country}
+            {property.county}
           </div>
         </div>
         <div className='text-3xl font-semibold text-violet-600'>
@@ -36,8 +39,9 @@ const PropertyDetails = () => {
       </div>
       <div className='flex flex-col items-start gap-8 lg:flex-row'>
         <div className='max-w-[768px]'>
-          <div className='mb-8'>
+          <div className='mb-8 flex flex-col gap-y-7'>
             <img src={property.imageLg} alt='' />
+            <PhotoCarousel />
           </div>
           <div className='flex gap-x-6 text-violet-700 mb-6'>
             <div className='flex gap-x-2 items-center'>
@@ -96,7 +100,7 @@ const PropertyDetails = () => {
               >
                 Send message
               </button>
-              <button className='bg-violet-700 border border-violet-700 text-white hover:border-purple-600 hover:text-purple-600 rounded p-4 text-sm w-full transition'>
+              <button className='bg-violet-700 border border-violet-700 text-white hover:border-purple-600 rounded p-4 text-sm w-full transition'>
                 Call
               </button>
               <button className='bg-violet-700 border text-slate-200 border-violet-700 hover:bg-purple-700  hover:text-white rounded p-2 text-sm w-full transition'>
