@@ -14,6 +14,7 @@ import SignUpForm from './pages/SignUpForm'
 import LogInForm from './pages/LogInForm';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import SignUpOrLogin from './pages/SignUpOrLogin';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/pages/LogInForm' element={<LogInForm />} />
         <Route path='/pages/PrivacyPolicy' element={<PrivacyPolicy />} />
         <Route path='/pages/TermsOfService' element={<TermsOfService />} />
+        <Route path='/pages/SignUpOrLogin' element={<SignUpOrLogin />} />
       </Routes>
       <Footer />
     </div>

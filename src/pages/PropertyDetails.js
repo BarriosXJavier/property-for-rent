@@ -93,19 +93,25 @@ const PropertyDetails = () => {
               placeholder='Message*'
               defaultValue='Hello, I am interested in [Modern apartment]'
             />
-            <div className='flex gap-x-2'>
-              <button
-                className='bg-violet-700 hover:bg-violet-800 text-white rounded p-2 text-sm w-full transition'
-                type='submit'
-              >
-                Send message
-              </button>
-              <button className='bg-violet-700 border border-violet-700 text-white hover:border-purple-600 rounded p-4 text-sm w-full transition'>
-                Call
-              </button>
-              <button className='bg-violet-700 border text-slate-200 border-violet-700 hover:bg-purple-700  hover:text-white rounded p-2 text-sm w-full transition'>
-                Book
-              </button>
+            <div className='flex justify-between'>
+              <Link to='/pages/SignUpOrLogin'>
+                <button
+                  className='border border-violet-700 text-white hover:bg-purple-600 bg-purple-700 focus:bg-blue-600 rounded p-4 text-sm w-full transition'
+                  type='submit'
+                >
+                  Send message
+                </button>
+              </Link>
+              <Link to='/pages/SignUpOrLogin'>
+                <button className='border border-violet-700 text-white hover:bg-purple-600 bg-purple-700 focus:bg-blue-600 rounded p-4 px-5 text-sm w-full transition'>
+                  Call
+                </button>
+              </Link>
+              <Link to='/pages/SignUpOrLogin'>
+                <button className='border border-violet-700 text-white hover:bg-purple-600 bg-purple-700 focus:bg-blue-600 rounded p-4 px-5 text-sm w-full transition'>
+                  Book
+                </button>
+              </Link>
             </div>
           </form>
         </div>
